@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="14dp"
+    android:background="@drawable/bg_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvAlert"
+        android:text="MAN OVERBOARD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lat: -- , Lng: --"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="12sp"
+        android:textColor="#666"/>
+</LinearLayout>

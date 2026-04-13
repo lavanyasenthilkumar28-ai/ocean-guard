@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+android:id="@+id/root"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/bg_ocean_motion">
+
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="353dp"
+        android:layout_height="333dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="logo"
+        android:src="@drawable/logo" />
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Aqua watch"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#1F2D3D"/>
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="Early Alart Save Lives🌊 "
+        android:textColor="#6B3520"
+        android:textSize="20sp"/>
+        </RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF7FF"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:text="Live Emergency Monitor"
+        android:textColor="#111"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:text="SAFE"
+        android:textColor="#4CAF50"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAlert"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:text="Waiting for GPS..."
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="473dp"
+
+        android:layout_marginTop="159dp" />
+</RelativeLayout>
+

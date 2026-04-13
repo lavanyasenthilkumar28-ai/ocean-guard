@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF7FF">
+
+    <!-- ===== TOP HEADER ===== -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="6dp"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="AquaWatch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#111"/>
+
+        <TextView
+            android:id="@+id/tvDevice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:textColor="#666"/>
+    </LinearLayout>
+
+    <!-- ===== CONTENT ===== -->
+    <ScrollView
+        android:layout_below="@id/header"
+        android:layout_above="@id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- RISK LEVEL -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:text="Current Risk Level"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:textColor="#555"/>
+
+                <TextView
+                    android:id="@+id/tvRisk"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="26sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- ACTIVITY STATUS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:text="Live Activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tvActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <!-- LIVE LOCATION -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:text="Live Location"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:textColor="#555"/>
+            </LinearLayout>
+
+            <!-- SOS -->
+            <Button
+                android:id="@+id/btnSOS"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="SEND EMERGENCY SOS"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#E53935"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ===== BOTTOM NAV ===== -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_home"/>
+
+        <ImageView
+            android:id="@+id/navPeople"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_people"/>
+
+        <ImageView
+            android:id="@+id/navLocation"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_location"/>
+
+        <ImageView
+            android:id="@+id/navLogout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_logout"/>
+    </LinearLayout>
+
+</RelativeLayout>

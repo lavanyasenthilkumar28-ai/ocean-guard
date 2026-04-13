@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF7FF"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency SOS"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#111"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="12dp"
+        android:text="Press SOS only in emergency"
+        android:textColor="#555"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnSOS"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="SEND SOS"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#E53935"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
